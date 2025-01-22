@@ -1,39 +1,65 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>multiscreenday</title>
     <style>
         body{
-            background-color: rgb(54, 98, 112);
+            background: linear-gradient(#e66465, #9198e5);
         }
         .wrapper {
             height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        footer {
-            height: 50px;
-            background-color: rgb(54, 98, 112);
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
         main {
             flex: 1;
 
         }
+        footer {
+            height: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#primaryNav" data-offset="180" class="loading">
     <div class="wrapper">
-        <header</header>
-        <main></main>
-        <footer>
-            <a href= "mailto: aleksandra.zarzyka@vfp.media"> 
-                Wyślij e-mail do Organizatora Eventu
-            </a>
+        <main>
+
+
+        </main>
+        <section class="contact--section d-inline-flex w-100 bg-black text-white" id="kontakt">
+            <div class="container">
+                <h2 class="w-100">Kontakty</h2>
+                <div class="row no-gutters py-md-5 py-3">
+                    <div class="col-lg-3 col-md-4 offset-lg-1 pt-md-4">
+                        <p><strong>Organizator Eventu:</strong></p>
+                        <p>Aleksandra Zarzyka<br />
+                            tel. 603 462 014<br />
+                            <a href="mailto: aleksandra.zarzyka@vfp.media" target="_blank" rel="noopener">
+                                aleksandra.zarzyka@vfp.media
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="main--footer d-inline-flex w-100 bg-white py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="http://media.com.pl/" title="VFP Communication" target="_blank">
+                            <img src="vfp stopka.jpg" alt="VFP Communication" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-6 d-inline-flex flex-column justify-content-center align-items-end">
+    
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
